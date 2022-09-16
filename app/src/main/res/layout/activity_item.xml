@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp">
+
+    <ImageView
+        android:id="@+id/image_item"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/imagem_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/favorite_item"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="80dp"
+        android:padding="3dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/favorite_backgroud"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/image_item"
+        app:layout_constraintTop_toTopOf="@+id/image_item" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nome do Produto"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_item"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="R$ 2.000,00"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_item"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+    <TextView
+        android:id="@+id/text_km"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="2019 - 37000km"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_item"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+
+    <TextView
+        android:id="@+id/text_city"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Bs.As. G.B.A Norte"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_item"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:padding="10dp"
+        android:background="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
