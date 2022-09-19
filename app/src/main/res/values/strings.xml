@@ -2,4 +2,11 @@
     <string name="app_name">Mercado Livre</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_empty_list">Busque um produto na barra de pesquisa!</string>
+    <string name="text_price">20.000</string>
+    <string name="forma_pagamento">Meio de pagamento</string>
+    <string name="text_tittle">CARRO FORD</string>
+    <string name="text_km">2019 - 37000km</string>
+    <string name="text_city">Bs.As. G.B.A Norte"</string>
+
+
 </resources>

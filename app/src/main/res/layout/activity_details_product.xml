@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activity_source">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,7 +37,7 @@
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_baseline_shopping_cart_24"
+            android:src="@drawable/ic_baseline_view_comfy_24"
             app:tint="@color/black" />
     </LinearLayout>
 
@@ -83,7 +82,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_list"
-        listitem="@layout/activity_item"
+        tools:listitem="@layout/product_details_moc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
